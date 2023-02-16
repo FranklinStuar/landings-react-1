@@ -12,13 +12,16 @@ function Footer () {
           <a href="#link-d" className="menu-footer__link">Upgrade Landing</a>
         </div>
       </div>
-    <div className="footer__section">
-      <div className="social-media">
-        <a href="#link-a" className="social-media__link">Instagram</a>
-        <a href="#link-a" className="social-media__link">LinkedIn</a>
-        <a href="#link-a" className="social-media__link">Email</a>
+      <div className="footer__section">
+        <div className="footer__description">
+          At Tech Company, we strive to provide the best technology solutions for our customers.
+        </div>
+        <div className="social-media">
+          <a href="#link-a" className="social-media__link">Instagram</a>
+          <a href="#link-a" className="social-media__link">LinkedIn</a>
+          <a href="#link-a" className="social-media__link">Email</a>
+        </div>
       </div>
-    </div>
     </footer>
   ) 
 }
