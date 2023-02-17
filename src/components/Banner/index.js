@@ -3,15 +3,20 @@ import React from 'react'
 function Banner() {
   return( 
     <div className='banner'>
-      <h1 className='banner__title'>Pellentesque in ipsum id orci porta dapibus</h1>
-      <span className='banner__subtitle'>
-        Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus
-      </span>
-      <picture>
-        <source media="(min-width: 768px)" srcSet="large.jpg"/>
-        <source srcSet="small.jpg"/>
-        <img  className='banner__image-banner' src="small.jpg" alt="A beautiful banner" />
+      <div className="banner__content">
+        <div className="banner__container-tex">
+          <h1 className='banner__title'>Mantenimiento de Automóviles de Primera Clase</h1>
+          <span className='banner__subtitle'>
+            Descubre cómo nuestro servicio de mecánica especializada puede ayudarte a mantener tu vehículo en su mejor estado
+          </span>
+        </div>
+      </div>
+      <picture  className='banner__picture'>
+        <source media="(min-width: 768px)" srcSet="./img/banner.jpeg"/>
+        <source srcSet="./img/banner.jpeg"/>
+        <img  className='banner__image' src="./img/banner.jpeg" alt="A beautiful banner" />
       </picture>
+
     </div>
   )
 }

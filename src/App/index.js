@@ -5,8 +5,8 @@ import { Services } from './../components/Services'
 import { Contact } from './../components/Contact'
 import { Testimonials } from './../components/Testimonials'
 import { Footer } from './../components/Footer'
-
-
+import "./../css/style.css"
+import "./../css/style.sass.css"
 function App() {
   return (
     <>
