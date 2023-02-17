@@ -2,10 +2,12 @@
   position: relative;
   width: 100%;
   &__text{
+    border: 2px solid #292F44;
+    border-radius: 16px;
     width: 90%;
     max-width: 900px;
     position: absolute;
-    background: #1B2138;
+    background: rgba(#1B2138, 0.8);
     color: #f5f5f5;
     padding: 40px 72px;
     text-align: center;
