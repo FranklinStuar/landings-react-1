@@ -1,0 +1,20 @@
+.phrase{
+  position: relative;
+  width: 100%;
+  &__text{
+    width: 90%;
+    max-width: 900px;
+    position: absolute;
+    background: #1B2138;
+    color: #f5f5f5;
+    padding: 40px 72px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5em;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
