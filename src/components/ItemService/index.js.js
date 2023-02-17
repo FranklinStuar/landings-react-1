@@ -1,19 +1,19 @@
 import React from 'react'
 
-function ItemService() {
+function ItemService({img, title, description}) {
   return (
     <div className='item-service'>
       <figure className='item-service__figure'>
         <picture>
-          <source media="(min-width: 768px)" srcSet="large.jpg"/>
-          <source srcSet="small.jpg"/>
-          <img  className='item-service__image' src="small.jpg" alt="Proin eget tortor risus" />
+          <source media="(min-width: 768px)" srcSet={img}/>
+          <source srcSet={img}/>
+          <img  className='item-service__image' src={img} alt="{title}" />
         </picture>
       </figure>
       <div className='item-service__content'>
-        <h3 className='item-service__title'>Proin eget tortor risus</h3>
+        <h3 className='item-service__title'>{title}</h3>
         <p className='item-service__description'>
-          Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Proin eget tortor risus.
+          {description}
         </p>
       </div>
     </div>
