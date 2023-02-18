@@ -1,0 +1,25 @@
+.faqs{
+  padding: 120px 10px;
+  &__title{
+    display: none;
+  }
+  &__list{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 48px 32px;
+  }
+}
+.faq{
+  display: grid;
+  gap: 10px;
+  &__question{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5em;
+    display: block;
+    margin: 0;
+  }
+}

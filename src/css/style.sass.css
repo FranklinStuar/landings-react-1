@@ -128,6 +128,7 @@
 
 .contact {
   padding: 120px 10px;
+  margin-bottom: 40px;
   position: relative;
   z-index: 1;
 }
@@ -259,17 +260,22 @@
 
 .testimonials {
   position: relative;
-  padding: 80px 10px 120px;
+  padding: 120px 10px;
 }
-.testimonials::after {
+.testimonials::after, .testimonials::before {
   content: "";
   position: absolute;
-  width: 100px;
+  width: 200px;
   height: 4px;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   background: #012E6A;
+}
+.testimonials::before {
+  top: 0;
+}
+.testimonials::after {
+  bottom: 0;
 }
 .testimonials__container {
   width: 100%;
@@ -298,6 +304,33 @@
   border-left: 1px solid #cacaca;
   display: grid;
 }
+.faqs {
+  padding: 120px 10px;
+}
+.faqs__title {
+  display: none;
+}
+.faqs__list {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 32px;
+}
+
+.faq {
+  display: grid;
+  gap: 10px;
+}
+.faq__question {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5em;
+  display: block;
+  margin: 0;
+}
+
 .footer {
   background-color: #0F103F;
   padding: 80px 10px 20px;

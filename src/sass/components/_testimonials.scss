@@ -1,15 +1,20 @@
 .testimonials{
   position: relative;
-  padding: 80px 10px 120px;
-  &::after{
+  padding: 120px 10px;
+  &::after, &::before{
     content: "";
     position: absolute;
-    width: 100px;
+    width: 200px;
     height: 4px;
-    top: 0;
     left: 50%;
     transform: translateX(-50%);
     background: #012E6A;
+  }
+  &::before{
+    top: 0;
+  }
+  &::after{
+    bottom: 0;
   }
   &__container{
     width: 100%;
