@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 function Footer () {
@@ -23,10 +24,13 @@ function Footer () {
 
             <ul className='social-media__list'>
               <li className='social-media__item'>
-                <a href='/name' className='social-media__link' target={"_blank"}><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href='https://franklindev.top/' className='social-media__link' rel="noreferrer" target={"_blank"}><FontAwesomeIcon icon={faGlobe} /></a>
               </li>
               <li className='social-media__item'>
-                <a href='/name' className='social-media__link' target={"_blank"}><FontAwesomeIcon icon={faInstagram} /></a>
+                <a href='https://www.linkedin.com/in/franklin-penafiel-ramirez/' className='social-media__link' rel="noreferrer" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} /></a>
+              </li>
+              <li className='social-media__item'>
+                <a href='https://www.instagram.com/fstuar_dev/' className='social-media__link' rel="noreferrer" target={"_blank"}><FontAwesomeIcon icon={faInstagram} /></a>
               </li>
             </ul>
           </div>

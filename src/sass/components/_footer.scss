@@ -43,5 +43,9 @@
     color: #fff;
     font-size: 16px;
     line-height: 1.5em;
+    &:hover{
+      text-decoration: underline;
+      color: #0BFCDD;
+    }
   }
 }
