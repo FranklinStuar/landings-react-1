@@ -246,4 +246,46 @@
   color: #3B79A4;
 }
 
+.testimonials {
+  position: relative;
+  padding: 80px 10px 120px;
+}
+.testimonials::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #012E6A;
+}
+.testimonials__container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  display: flex;
+  gap: 24px;
+}
+
+.testimonial {
+  flex: 1;
+  padding: 32px 20px;
+  background: white;
+  box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.testimonial__comment {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+.testimonial__author {
+  width: 90%;
+  margin-left: auto;
+  padding-left: 16px;
+  border-left: 1px solid #cacaca;
+  display: grid;
+}
+
 /*# sourceMappingURL=style.sass.css.map */

@@ -1,0 +1,42 @@
+.testimonials{
+  position: relative;
+  padding: 80px 10px 120px;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #012E6A;
+  }
+  &__container{
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+  }
+}
+.testimonial{
+  flex: 1;
+  padding: 32px 20px;
+  background: white;
+  box-shadow: 4px 10px 12px rgba(#000000, 0.2);
+  border-radius: 8px;
+  &__comment{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+  &__author{
+    width: 90%;
+    margin-left: auto;
+    padding-left: 16px;
+    border-left: 1px solid #cacaca;
+    display: grid;
+  }
+  &__name{}
+  &__profession{}
+}
