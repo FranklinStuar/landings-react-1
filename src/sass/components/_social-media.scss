@@ -15,4 +15,13 @@
       color: #3B79A4;
     }
   }
+  &--light &__link{
+      color: #b4b4b4;
+      &:hover{
+        color: #0BFCDD;
+      }
+  }
+  &--right &__list{
+      justify-content: end;
+  }
 }
