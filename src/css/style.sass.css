@@ -230,4 +230,20 @@
   background: #012E6A;
 }
 
+.social-media__list {
+  display: flex;
+}
+.social-media__link {
+  font-size: 28px;
+  padding: 4px 10px;
+  color: #606060;
+  display: block;
+  transition: 0.3s color, 0.3s border-bottom;
+  outline: none;
+}
+.social-media__link:hover {
+  border-bottom: 2px solid;
+  color: #3B79A4;
+}
+
 /*# sourceMappingURL=style.sass.css.map */

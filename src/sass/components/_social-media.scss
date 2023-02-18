@@ -1,1 +1,18 @@
-.social-media{}
+.social-media{
+
+  &__list{
+    display: flex;
+  }
+  &__link{
+    font-size: 28px;
+    padding: 4px 10px;
+    color: #606060;
+    display: block;
+    transition: 0.3s color, 0.3s border-bottom;
+    outline: none;
+    &:hover{
+      border-bottom: 2px solid;
+      color: #3B79A4;
+    }
+  }
+}

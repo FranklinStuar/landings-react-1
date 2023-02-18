@@ -1,4 +1,10 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faInstagram, faYoutube,faTiktok } from '@fortawesome/free-brands-svg-icons'
+
+
+
 
 function Contact () {
   return (
@@ -8,15 +14,22 @@ function Contact () {
           <h2 className='contact__title'>Contact</h2>
           <span className='contact__description'>Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. </span>
           <div className='social-media'>
+
             <ul className='social-media__list'>
               <li className='social-media__item'>
-                <span className='social-media__name'>Facebook</span>
+                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faEnvelope} /></a>
               </li>
               <li className='social-media__item'>
-                <span className='social-media__name'>Instagram</span>
+                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faTwitter} /></a>
               </li>
               <li className='social-media__item'>
-                <span className='social-media__name'>Tik Tok</span>
+                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faInstagram} /></a>
+              </li>
+              <li className='social-media__item'>
+                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faYoutube} /></a>
+              </li>
+              <li className='social-media__item'>
+                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faTiktok} /></a>
               </li>
             </ul>
           </div>
