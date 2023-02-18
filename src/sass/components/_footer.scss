@@ -34,6 +34,12 @@
     font-size: 12px;
     display: block;
     width: 100%;
+    a {
+      color: #0BFCDD;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 .menu-footer{
@@ -44,7 +50,6 @@
     font-size: 16px;
     line-height: 1.5em;
     &:hover{
-      text-decoration: underline;
       color: #0BFCDD;
     }
   }

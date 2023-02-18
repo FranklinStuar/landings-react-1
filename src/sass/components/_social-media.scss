@@ -10,15 +10,17 @@
     display: block;
     transition: 0.3s color, 0.3s border-bottom;
     outline: none;
+    border-bottom: 2px solid rgba(#000000,0);
     &:hover{
-      border-bottom: 2px solid;
       color: #3B79A4;
+      border-color: #3B79A4;
     }
   }
   &--light &__link{
       color: #b4b4b4;
       &:hover{
         color: #0BFCDD;
+        border-color: #0BFCDD;
       }
   }
   &--right &__list{

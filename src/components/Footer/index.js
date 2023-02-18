@@ -11,9 +11,9 @@ function Footer () {
           <h2 className='footer__title'>Resources</h2>
           <div className="menu-footer">
             <a href="#link-a" className="menu-footer__link">Share this web</a>
-            <a href="#link-b" className="menu-footer__link">Do Changes</a>
-            <a href="#link-c" className="menu-footer__link">Do custom website</a>
-            <a href="#link-d" className="menu-footer__link">Upgrade Landing</a>
+            <a href="#link-b" className="menu-footer__link">Do Some Changes</a>
+            <a href="#link-c" className="menu-footer__link">Do A Custom Website</a>
+            <a href="#link-d" className="menu-footer__link">Upgrade Landing Page</a>
           </div>
         </div>
         <div className="footer__section">

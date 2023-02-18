@@ -7,7 +7,7 @@ function ItemService({img, title, description}) {
         <picture>
           <source media="(min-width: 768px)" srcSet={img}/>
           <source srcSet={img}/>
-          <img  className='item-service__image' src={img} alt="{title}" />
+          <img  className='item-service__image' src={img} alt="{title}" width={310} height={230} />
         </picture>
       </figure>
       <div className='item-service__content'>
