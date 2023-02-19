@@ -4,13 +4,17 @@
     display: flex;
   }
   &__link{
-    font-size: 28px;
+    font-size: 22px;
     padding: 4px 10px;
     color: #606060;
     display: block;
     transition: 0.3s color, 0.3s border-bottom;
     outline: none;
     border-bottom: 2px solid rgba(#000000,0);
+    @media (min-width:768) {
+    font-size: 28px;
+      
+    }
     &:hover{
       color: #3B79A4;
       border-color: #3B79A4;

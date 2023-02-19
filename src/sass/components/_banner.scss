@@ -6,6 +6,8 @@
   justify-content: start;
   align-items: center;
   @media (min-width: 768px) {
+  }
+  @media (min-width: 1024px) {
     min-height: 800px;
   }
   &__content{
@@ -15,12 +17,14 @@
     }
   }
   &__container-tex{
-    // border: 1px solid #fff;
     color: white;
     position: relative;
     display: grid;
     gap: 30px;
     @media (min-width: 768px) {
+      width: 80%;
+    }
+    @media (min-width: 1024px) {
       width: 65%;
       padding: 80px 60px;
     }
@@ -32,8 +36,11 @@
     text-shadow: 4px 8px 12px rgba(#000000,0.5);
     text-align: center;
     @media (min-width: 768px) {
-      font-size: 72px;
+      font-size: 44px;
       text-align: left;
+    }
+    @media (min-width: 1024px) {
+      font-size: 72px;
     }
   }
   &__subtitle{
@@ -42,7 +49,7 @@
     line-height: 1.25em;
     font-weight: 400;
     text-shadow: 1px 2px 4px rgba(#000000,0.5);
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       font-size: 24px;
     }
   }
