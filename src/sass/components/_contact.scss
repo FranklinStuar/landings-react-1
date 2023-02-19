@@ -1,62 +1,90 @@
 .contact{
-  padding: 120px 10px;
   margin-bottom: 40px;
   position: relative;
   z-index: 1;
+  padding: 60px 20px;
+  @media (min-width: 768px) {
+    padding: 120px 10px;
+    margin-bottom: 40px;
+  }
   &__container{
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
-    &::after{
-      content: "";
-      position: absolute;
-      width: 45%;
-      height: 80%;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      background-color: #012E6A;
-      z-index: -1;
+    gap: 20px 0;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      &::after{
+        content: "";
+        position: absolute;
+        width: 45%;
+        height: 80%;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #012E6A;
+        z-index: -1;
+      }
     }
   }
   &__info{
-    padding-right: 40px;
     display: grid;
     gap: 20px;
+    @media (min-width: 768px) {
+      padding-right: 40px;
+    }
   }
   &__title{
     color:#3B79A4;
-    font-size: 32px;
-    font-weight: 900px;
+    font-size: 20px;
+    font-weight: 700;
     line-height: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.9px;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: start;
+      font-size: 32px;
+    }
   }
   &__description{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5em;
-    width: 80%;
     display: block;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: start;
+      font-size: 18px;
+      width: 80%;
+    }
     &::before{
       content: "";
-      width: 200px;
+      width: 100px;
       height: 4px;
       background-color: #012E6A;
       display: block;
+      margin: 0 auto;
+      @media (min-width: 768px) {
+        margin: 0;
+        width: 200px;
+      }
     }
     &::before{
       margin-bottom: 20px;
     }
   }
   &__container-form{
-    padding: 40px;
     z-index: 3;
     background: #fff;
     box-shadow: 4px 10px 16px rgba(#000000, 0.2);
     border-radius: 4px;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    @media (min-width: 768px) {
+    }
   }
 }

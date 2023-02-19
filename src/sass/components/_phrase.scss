@@ -2,21 +2,28 @@
   position: relative;
   width: 100%;
   &__text{
-    border: 2px solid #292F44;
-    border-radius: 16px;
-    width: 90%;
+    width: 100%;
     max-width: 900px;
-    position: absolute;
-    background: rgba(#1B2138, 0.8);
     color: #f5f5f5;
-    padding: 40px 72px;
+    background: #1B2138;  
+    padding: 40px 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5em;
     height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    @media (min-width: 768px) {
+      padding: 40px 72px;
+      width: 90%;
+      border: 2px solid #292F44;
+      border-radius: 16px;
+      background: rgba(#1B2138, 0.8);  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);  
+    font-size: 20px;
+  }
   }
 }
