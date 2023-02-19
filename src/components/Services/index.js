@@ -2,11 +2,12 @@ import React from 'react'
 import { ItemService } from './../ItemService/index.js'
 
 const servicesList = [
-  {img:'./img/1.jpeg', title:"Mantenimiento Preventivo", description:'Mantén tu vehículo de lujo en óptimas condiciones con nuestro servicio de mantenimiento de alta calidad que te garantiza la tranquilidad de saber que tu inversión está en las mejores manos.'},
-  {img:'./img/2.jpeg', title:"Reparación de Motor", description:'Restaura la potencia y rendimiento de tu vehículo de lujo con nuestro servicio de reparación de motores realizado por técnicos altamente capacitados y con experiencia en autos de alta gama.'},
-  {img:'./img/3.jpeg', title:"Alineación y Balanceo", description:'Asegura la estabilidad y manejo de tu vehículo de lujo con nuestro servicio de alineación y balanceo, donde nos enfocamos en detalles precisos y utilizamos equipos de última generación.'},
-  {img:'./img/4.jpeg', title:"Cambio de Aceite", description:'Extiende la vida útil del motor de tu vehículo de lujo con nuestro servicio de cambio de aceite premium, realizado con productos de la más alta calidad y con la atención personalizada que mereces.'}
+  {img:'./img/1.jpeg', title:"Tutorías personalizadas", description:'Cada estudiante tiene un nivel de comprensión y habilidades diferentes, por lo que me aseguraría de ofrecer tutorías personalizadas para abordar sus necesidades específicas. Esto podría incluir la revisión de conceptos que están teniendo dificultades para entender o la preparación de exámenes.'},
+  {img:'./img/2.jpeg', title:"Preparación de exámenes", description:'Ayudaría a los estudiantes a prepararse para sus exámenes, proporcionándoles recursos y estrategias para mejorar su comprensión de los temas y aumentar su confianza.'},
+  {img:'./img/3.jpeg', title:"Asesoramiento en la elección de carreras", description:'Como profesor de matemáticas, tendría una amplia experiencia en el campo de las matemáticas y podría brindar asesoramiento sobre las posibles carreras que los estudiantes podrían considerar en este campo.'},
+  {img:'./img/4.jpeg', title:"Aprendizaje en línea", description:'En el mundo actual, muchas personas prefieren aprender en línea, así que estaría dispuesto a ofrecer mis servicios de tutoría en línea para satisfacer las necesidades de aquellos que prefieren el aprendizaje a distancia.'},
 ]
+
 /*
  */
 function Services() {

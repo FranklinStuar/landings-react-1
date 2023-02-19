@@ -5,9 +5,9 @@ function Banner() {
     <div className='banner'>
       <div className="banner__content">
         <div className="banner__container-tex">
-          <h1 className='banner__title'>Mantenimiento de Automóviles de Primera Clase</h1>
+          <h1 className='banner__title'>Educación matemática online y eficaz</h1>
           <span className='banner__subtitle'>
-            Descubre cómo nuestro servicio de mecánica especializada puede ayudarte a mantener tu vehículo en su mejor estado
+            Te ofrecemos la educación personalizada más avazada en matemática utilizando la tecnología a tu favor
           </span>
         </div>
       </div>

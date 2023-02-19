@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faInstagram, faYoutube,faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram} from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -20,16 +20,7 @@ function Contact () {
                 <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faEnvelope} /></a>
               </li>
               <li className='social-media__item'>
-                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faTwitter} /></a>
-              </li>
-              <li className='social-media__item'>
                 <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faInstagram} /></a>
-              </li>
-              <li className='social-media__item'>
-                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faYoutube} /></a>
-              </li>
-              <li className='social-media__item'>
-                <a href='/name' className='social-media__link'><FontAwesomeIcon icon={faTiktok} /></a>
               </li>
             </ul>
           </div>
