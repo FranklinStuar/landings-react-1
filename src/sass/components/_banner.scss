@@ -13,8 +13,6 @@
   &__content{
     width: 80%;
     margin: auto;
-    @media (min-width: 768px) {
-    }
   }
   &__container-tex{
     color: white;
@@ -24,8 +22,10 @@
     @media (min-width: 768px) {
       width: 80%;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1300px) {
       width: 65%;
+    }
+    @media (min-width: 1400px) {
       padding: 80px 60px;
     }
   }

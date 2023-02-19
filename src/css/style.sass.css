@@ -30,9 +30,13 @@ body {
     width: 80%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1300px) {
   .banner__container-tex {
     width: 65%;
+  }
+}
+@media (min-width: 1400px) {
+  .banner__container-tex {
     padding: 80px 60px;
   }
 }
@@ -137,7 +141,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 2014px) {
+@media (min-width: 1024px) {
   .services__list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -194,7 +198,7 @@ body {
   display: block;
   padding: 0 20px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .item-service__description {
     padding: 0;
     font-size: 18px;
@@ -621,9 +625,9 @@ body {
     text-align: end;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .footer__description {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .footer__copyright {
