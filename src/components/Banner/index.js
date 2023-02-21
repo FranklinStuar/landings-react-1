@@ -5,9 +5,9 @@ function Banner() {
     <div className='banner'>
       <div className="banner__content">
         <div className="banner__container-tex">
-          <h1 className='banner__title'>Educación matemática online y eficaz</h1>
+          <h1 className='banner__title'>Saborea la diferencia</h1>
           <span className='banner__subtitle'>
-            Te ofrecemos la educación personalizada más avazada en matemática utilizando la tecnología a tu favor
+            Cocina de autor para todos los gustos
           </span>
         </div>
       </div>

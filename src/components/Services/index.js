@@ -2,12 +2,11 @@ import React from 'react'
 import { ItemService } from './../ItemService/index.js'
 
 const servicesList = [
-  {img:'./img/1.jpeg', title:"Tutorías personalizadas", description:'Cada estudiante tiene un nivel de comprensión y habilidades diferentes, por lo que me aseguraría de ofrecer tutorías personalizadas para abordar sus necesidades específicas. Esto podría incluir la revisión de conceptos que están teniendo dificultades para entender o la preparación de exámenes.'},
-  {img:'./img/2.jpeg', title:"Preparación de exámenes", description:'Ayudaría a los estudiantes a prepararse para sus exámenes, proporcionándoles recursos y estrategias para mejorar su comprensión de los temas y aumentar su confianza.'},
-  {img:'./img/3.jpeg', title:"Asesoramiento en la elección de carreras", description:'Como profesor de matemáticas, tendría una amplia experiencia en el campo de las matemáticas y podría brindar asesoramiento sobre las posibles carreras que los estudiantes podrían considerar en este campo.'},
-  {img:'./img/4.jpeg', title:"Aprendizaje en línea", description:'En el mundo actual, muchas personas prefieren aprender en línea, así que estaría dispuesto a ofrecer mis servicios de tutoría en línea para satisfacer las necesidades de aquellos que prefieren el aprendizaje a distancia.'},
+  {img:'./img/1.jpeg', title:"Menús personalizados", description:'Crearé un menú personalizado para tu evento o reunión que satisfaga tus gustos y necesidades. '},
+  {img:'./img/2.jpeg', title:"Catering para eventos", description:'Proporcionaré comida deliciosa y presentable para tus eventos especiales, desde cenas elegantes hasta comidas casuales. '},
+  {img:'./img/3.jpeg', title:"Clases de cocina", description:'Aprenderás a cocinar deliciosos platos con mis clases interactivas y divertidas. '},
+  {img:'./img/4.jpeg', title:"Consultoría culinaria", description:'Ofrezco consultoría culinaria a restaurantes y empresas para mejorar su oferta gastronómica.'},
 ]
-
 /*
  */
 function Services() {

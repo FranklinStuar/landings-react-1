@@ -3,30 +3,35 @@ import { ItemFaq } from './../ItemFaq/index.js'
 
 const faqsList = [
   {
-    question: "¿Cuáles son los horarios de las clases?", 
-    answer: "Los horarios de las clases son flexibles y se pueden programar de acuerdo a la disponibilidad del estudiante y del profesor. Si tiene alguna preferencia de horario, comuníquese conmigo para programar una sesión."
+  question:"¿Cuánto tiempo de antelación necesito para reservar tus servicios? ",
+  answer:"Se recomienda reservar con al menos dos semanas de anticipación, pero puedo trabajar con plazos más cortos si es necesario. "
   },
   {
-    question: "¿Cuál es el costo de las clases?", 
-    answer: "El costo de las clases varía según la duración de la sesión y el nivel de estudio requerido. Para obtener más información sobre las tarifas, comuníquese conmigo a través de mi página web."
+  question:"¿Ofreces opciones vegetarianas y veganas? ",
+  answer:"Sí, puedo crear menús personalizados para satisfacer tus necesidades alimentarias. "
   },
   {
-    question: "¿Cómo se realizan las clases en línea?", 
-    answer: "Las clases se realizan a través de una plataforma en línea, donde el estudiante y el profesor pueden conectarse y trabajar juntos en tiempo real. Se pueden compartir archivos y documentos, y también se puede utilizar una pizarra virtual para explicar conceptos matemáticos."
+  question:"¿Ofreces servicios de catering para eventos grandes? ",
+  answer:"Sí, puedo proporcionar comida para eventos de hasta 500 personas. "
   },
   {
-    question: "¿Qué nivel de matemáticas puedo enseñar?", 
-    answer: "Como profesor universitario de matemáticas de alto nivel, puedo ofrecer clases de matemáticas de nivel básico, intermedio y avanzado. Desde álgebra, cálculo y estadística hasta geometría y matemáticas aplicadas."
+  question:"¿Cuál es tu estilo de cocina? ",
+  answer:"Me especializo en cocina de autor con influencias internacionales. "
   },
   {
-    question: "¿Cómo puedo prepararme para las clases?", 
-    answer: "Los estudiantes deben tener su material de estudio a mano, incluyendo libros de texto, ejercicios, y cualquier otro material relevante. También pueden proporcionar previamente los temas o problemas que necesiten revisar. Además, los estudiantes deben asegurarse de tener una buena conexión a Internet y una cámara web de calidad."
+  question:"¿Ofreces servicio de mesa y decoración? ",
+  answer:"Sí, puedo proporcionar un servicio completo que incluye mesa y decoración. "
   },
   {
-    question: "¿Qué métodos de pago se aceptan?", 
-    answer: "Se aceptan diversos métodos de pago, tales como tarjeta de crédito, transferencias bancarias y billeteras electrónicas. Todos los detalles de pago se discutirán durante la reserva de la sesión."
+  question:"¿Cuál es tu área de servicio? ",
+  answer:"Estoy disponible para eventos en toda la ciudad. "
+  },
+  {
+  question:"¿Ofreces servicio de limpieza después del evento? ",
+  answer:"Sí, puedo proporcionar servicio de limpieza por un costo adicional."
   },
 ]
+
 function Faqs (){
   return (
     <div className="faqs">
