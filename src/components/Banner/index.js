@@ -12,9 +12,9 @@ function Banner() {
         </div>
       </div>
       <picture  className='banner__picture'>
-        <source media="(min-width: 768px)" srcSet="./img/banner.jpeg"/>
-        <source srcSet="./img/banner.jpeg"/>
-        <img  className='banner__image' src="./img/banner.jpeg" alt="A beautiful banner" />
+        <source media="(min-width: 768px)" srcSet="./img/banner.webp"/>
+        <source srcSet="./img/banner.webp"/>
+        <img  className='banner__image' src="./img/banner.webp" alt="A beautiful banner" />
       </picture>
 
     </div>
