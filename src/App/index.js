@@ -1,4 +1,5 @@
 import React from 'react'
+import { GeneratorForm } from './../Admin/GeneratorForm'
 import { Banner } from './../components/Banner'
 import { Phrase } from './../components/Phrase'
 import { Services } from './../components/Services'
@@ -11,6 +12,7 @@ import "./../css/style.sass.css"
 function App() {
   return (
     <>
+      <GeneratorForm/>
       <Banner/>
       <Phrase/>
       <Services/>
