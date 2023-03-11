@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container{
+    @apply w-full max-w-7xl p-3 mx-auto
+  }
+  .form{
+    @apply grid gap-5
+  }
+  .group-form{
+    @apply grid gap-2
+  }
+  .input-form{
+    @apply border-2 border-solid border-gray-800
+  }
+  .textarea-form{
+    @apply h-40
+  }
+  .submit-form{
+    @apply border-2 border-solid border-gray-600 px-8 py-2 cursor-pointer hover:bg-gray-600 hover:text-white
+  }
+}
