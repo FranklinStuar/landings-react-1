@@ -12,7 +12,8 @@ function Contact () {
       <div className="contact__container">
         <div className='contact__info'>
           <h2 className='contact__title'>Contact</h2>
-          <span className='contact__description'>¿Necesitas más información sobre nuestros servicios o deseas programar una cita? Contáctanos a través del siguiente formulario o nuestras redes sociales. Estamos aquí para ayudarte y responder a todas tus preguntas. </span>
+          <span className='contact__description'>Do you need more information about our services or would you like to schedule with us? Contact us by completing the next form or through our social media. We would be happy to resolve all your doubts. </span>
+
           <div className='social-media'>
 
             <ul className='social-media__list'>
