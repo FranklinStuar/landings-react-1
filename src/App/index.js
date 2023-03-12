@@ -1,23 +1,21 @@
 import React from 'react'
-import { Banner } from './../components/Banner'
-import { Phrase } from './../components/Phrase'
-import { Services } from './../components/Services'
-import { Contact } from './../components/Contact'
-import { Testimonials } from './../components/Testimonials'
-import { Footer } from './../components/Footer'
-import { Faqs } from './../components/Faqs'
+import { AppUI } from './AppUI'
+import { PageProvider } from '../Context/PageContext'
+import { AdminProvider } from '../Context/AdminContext'
+
 import "./../css/style.css"
 import "./../css/style.sass.css"
+
+
 function App() {
+
   return (
     <>
-      <Banner/>
-      <Phrase/>
-      <Services/>
-      <Contact/>
-      <Testimonials/>
-      <Faqs/>
-      <Footer/>
+    <PageProvider>
+      <AdminProvider>
+        <AppUI />
+      </AdminProvider>
+    </PageProvider>
     </>
   );
 }
