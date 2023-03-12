@@ -58,9 +58,36 @@ const defaultPage = {
 
 }
 
+function useLocalStorage(itemName,initialValue){
+  const [item,setItem] = React.useState(initialValue)
+  React.useEffect(() => {
+    setTimeout(() => {
+      // get content solved
+      let localStorageItem = localStorage.getItem(itemName)
+      let parseItem = []
+      if(!localStorageItem){
+        localStorage.setItem(itemName,JSON.stringify(initialValue))
+        parseItem = initialValue
+      }
+      else
+        parseItem = JSON.parse(localStorageItem)
+      setItem(parseItem)
+    }, 1000);
+  })
+
+  // set content
+  const saveItem = (newItem) => {
+    localStorage.setItem(itemName,JSON.stringify(newItem))
+    setItem(newItem)
+  }
+  return [item,saveItem]
+  
+}
+
 function App() {
-  // initContentPage
-  const [page,setPage] = React.useState(defaultPage)
+
+  const [page, setPage] = useLocalStorage("automatic_page",defaultPage)
+  
   // Form to create an automatic page
   const [name,setName] = React.useState("")
   const [email,setEmail] = React.useState("")
@@ -73,7 +100,6 @@ function App() {
 
   return (
     <AppUI 
-    setPage={setPage}
     setName={setName}
     setEmail={setEmail}
     setTypeCompany={setTypeCompany}
