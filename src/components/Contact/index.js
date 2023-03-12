@@ -6,7 +6,11 @@ import { faTwitter, faInstagram, faYoutube,faTiktok } from '@fortawesome/free-br
 
 
 
-function Contact () {
+function Contact ({nameMessage,setNameMessage,emailMessage,setEmailMessage,descriptionMessage,setDescriptionMessage}) {
+  const sendMessage = (e) =>{
+    e.preventDefault();
+    console.log("messages sended")
+  }
   return (
     <div className='contact'>
       <div className="contact__container">
@@ -36,18 +40,18 @@ function Contact () {
           </div>
         </div>
         <div className='contact__container-form '>
-          <form action="" className="contact__form form">
+          <form action="" className="contact__form form" onSubmit={sendMessage}>
             <div className='form-group'>
               <label className='form-group__label'>Name</label>
-              <input className='form-group__text-field'/>
+              <input className='form-group__text-field' value={nameMessage} onChange={(e)=> setNameMessage(e.target.value)}/>
             </div>
             <div className='form-group'>
               <label className='form-group__label'>Email</label>
-              <input className='form-group__text-field' type={'email'}/>
+              <input className='form-group__text-field' type={'email'} value={emailMessage} onChange={(e)=> setEmailMessage(e.target.value)}/>
             </div>
             <div className='form-group'>
               <label className='form-group__label'>Message</label>
-              <textarea className='form-group__text-field form-group__text-area' rows={4}></textarea>
+              <textarea className='form-group__text-field form-group__text-area' rows={4} value={descriptionMessage} onChange={(e)=> setDescriptionMessage(e.target.value)}></textarea>
             </div>
             <div className='form-cta'>
               <button className='submit' type='submit'>Submit</button>
