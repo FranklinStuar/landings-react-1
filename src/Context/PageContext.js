@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocalStorage } from './AppLocalStorage'
+import { useLocalStorage } from '../App/AppLocalStorage'
 
 const defaultPage = {
   banner: {
@@ -55,44 +55,32 @@ const defaultPage = {
 
 }
 
-const AppContext = React.createContext()
+const PageContext = React.createContext()
 
-function AppProvider(props) {
+function PageProvider(props) {
 
   const [page, setPage] = useLocalStorage("automatic_page",defaultPage)
   
-  // Form to create an automatic page
-  const [name,setName] = React.useState("")
-  const [email,setEmail] = React.useState("")
-  const [typeCompany,setTypeCompany] = React.useState("")
-  const [description,setDescription] = React.useState("")
   // Form to send Message
   const [nameMessage,setNameMessage] = React.useState("")
   const [emailMessage,setEmailMessage] = React.useState("")
   const [descriptionMessage,setDescriptionMessage] = React.useState("")
-
+  const sendMessage = (e) =>{
+    e.preventDefault();
+    console.log("messages sended")
+  }
   return(
-    <AppContext.Provider
+    <PageContext.Provider
       value={{
-        setName,
-        setEmail,
-        setTypeCompany,
-        setDescription,
-        setNameMessage,
-        setEmailMessage,
-        setDescriptionMessage,
-        page,
-        name,
-        email,
-        typeCompany,
-        description,
-        nameMessage,
-        emailMessage,
-        descriptionMessage
+        nameMessage, setNameMessage,
+        emailMessage, setEmailMessage,
+        descriptionMessage, setDescriptionMessage,
+        page, setPage,
+        sendMessage
       }}
     >
       {props.children}
-    </AppContext.Provider>
+    </PageContext.Provider>
   )
 }
-export {AppContext, AppProvider}
+export {PageContext, PageProvider}

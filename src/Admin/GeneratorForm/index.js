@@ -1,16 +1,9 @@
 import React from 'react';
 import {InputForm, TextAreaForm, Submit} from "./../Form"
+import { AdminContext } from '../../Context/AdminContext'
 
-function GeneratorForm({
-  name, setName,
-  email, setEmail,
-  typeCompany, setTypeCompany,
-  description, setDescription,
-}){
-  const onSubmitForm = (e)=>{
-    e.preventDefault(); 
-    console.log("submit")
-  }
+function GeneratorForm(){
+  const {name, setName, email, setEmail, typeCompany, setTypeCompany, description, setDescription, onSubmitForm} = React.useContext(AdminContext);
   return(
     <div className='container'>
       <form className='form' action="/" onSubmit={onSubmitForm}>

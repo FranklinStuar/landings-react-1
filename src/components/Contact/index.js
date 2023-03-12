@@ -1,4 +1,5 @@
 import React from 'react'
+import { PageContext } from '../../Context/PageContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faInstagram, faYoutube,faTiktok } from '@fortawesome/free-brands-svg-icons'
@@ -6,11 +7,10 @@ import { faTwitter, faInstagram, faYoutube,faTiktok } from '@fortawesome/free-br
 
 
 
-function Contact ({nameMessage,setNameMessage,emailMessage,setEmailMessage,descriptionMessage,setDescriptionMessage}) {
-  const sendMessage = (e) =>{
-    e.preventDefault();
-    console.log("messages sended")
-  }
+function Contact () {
+  
+  const {nameMessage,setNameMessage,emailMessage,setEmailMessage,descriptionMessage,setDescriptionMessage,sendMessage} = React.useContext(PageContext);
+
   return (
     <div className='contact'>
       <div className="contact__container">
@@ -40,7 +40,7 @@ function Contact ({nameMessage,setNameMessage,emailMessage,setEmailMessage,descr
           </div>
         </div>
         <div className='contact__container-form '>
-          <form action="" className="contact__form form" onSubmit={sendMessage}>
+          <form action="" className="contact__form form" onSubmit={(e)=> sendMessage(e)}>
             <div className='form-group'>
               <label className='form-group__label'>Name</label>
               <input className='form-group__text-field' value={nameMessage} onChange={(e)=> setNameMessage(e.target.value)}/>

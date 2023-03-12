@@ -1,6 +1,7 @@
 import React from 'react'
 import { AppUI } from './AppUI'
-import { AppProvider } from './AppContext'
+import { PageProvider } from '../Context/PageContext'
+import { AdminProvider } from '../Context/AdminContext'
 
 import "./../css/style.css"
 import "./../css/style.sass.css"
@@ -9,9 +10,13 @@ import "./../css/style.sass.css"
 function App() {
 
   return (
-    <AppProvider>
-      <AppUI />
-    </AppProvider>
+    <>
+    <PageProvider>
+      <AdminProvider>
+        <AppUI />
+      </AdminProvider>
+    </PageProvider>
+    </>
   );
 }
 
