@@ -1,12 +1,6 @@
 import React from 'react'
-import { GeneratorForm } from './../Admin/GeneratorForm'
-import { Banner } from './../components/Banner'
-import { AboutUs } from '../components/AboutUs'
-import { Services } from './../components/Services'
-import { Contact } from './../components/Contact'
-import { Testimonials } from './../components/Testimonials'
-import { Footer } from './../components/Footer'
-import { Faqs } from './../components/Faqs'
+import { AppUI } from './AppUI'
+
 import "./../css/style.css"
 import "./../css/style.sass.css"
 
@@ -66,7 +60,7 @@ const defaultPage = {
 
 function App() {
   // initContentPage
-  const [page, setPage] = React.useState(defaultPage)
+  const [page,setPage] = React.useState(defaultPage)
   // Form to create an automatic page
   const [name,setName] = React.useState("")
   const [email,setEmail] = React.useState("")
@@ -78,45 +72,24 @@ function App() {
   const [descriptionMessage,setDescriptionMessage] = React.useState("")
 
   return (
-    <>
-      <GeneratorForm
-        name={name}
-        setName={setName}
-        email={email}
-        setEmail={setEmail}
-        typeCompany={typeCompany}
-        setTypeCompany={setTypeCompany}
-        description={description}
-        setDescription={setDescription}
-      />
-      <Banner
-        title={page.banner.title}
-        description={page.banner.description}
-        largeImage={page.banner.image.large}
-        smallImage={page.banner.image.small}
-      />
-      <AboutUs 
-        aboutUsContent={page.aboutUs}
-      />
-      <Services 
-        servicesList={page.services}
-      />
-      <Contact
-        nameMessage={nameMessage}
-        setNameMessage={setNameMessage}
-        emailMessage={emailMessage}
-        setEmailMessage={setEmailMessage}
-        descriptionMessage={descriptionMessage}
-        setDescriptionMessage={setDescriptionMessage}
-      />
-      <Testimonials 
-        testimonialsList={page.testimonials}
-      />
-      <Faqs
-        faqsList={page.faqs}
-      />
-      <Footer/>
-    </>
+    <AppUI 
+    setPage={setPage}
+    setName={setName}
+    setEmail={setEmail}
+    setTypeCompany={setTypeCompany}
+    setDescription={setDescription}
+    setNameMessage={setNameMessage}
+    setEmailMessage={setEmailMessage}
+    setDescriptionMessage={setDescriptionMessage}
+    page={page}
+    name={name}
+    email={email}
+    typeCompany={typeCompany}
+    description={description}
+    nameMessage={nameMessage}
+    emailMessage={emailMessage}
+    descriptionMessage={descriptionMessage}
+    />
   );
 }
 
